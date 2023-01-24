@@ -83,8 +83,6 @@ app.get('/products', (req, res)=>{
         res.send(data);
         
     })
-
-
 })
 
 //Connection with db
