@@ -8,7 +8,7 @@ let port = process.env.PORT || 9310
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
 let bodyParser = require('body-parser')
-let mongoUrl= "mongodb+srv://test:test1234@cluster0.bjjeqdw.mongodb.net/groceryData"
+let mongoUrl= "mongodb+srv://test:test1234@cluster0.bjjeqdw.mongodb.net/groceryData?retryWrites=true&w=majority"
 //let mongoUrl ="mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2"
 let db;
 app.use(cors())
